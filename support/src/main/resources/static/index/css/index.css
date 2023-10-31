@@ -1,0 +1,102 @@
+#slogan{
+    margin-left: 20%;
+    margin-bottom: 20px;
+    width: 60%;
+    height: 60px;
+    overflow: hidden;
+    justify-content: center;
+    align-items: center;
+}
+.sloganImg{
+    width: 50px;
+}
+#slogan div{
+    animation: footerRuning 10s steps(10000) infinite;
+    display: flex;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    justify-content: center;
+    font-size: 18px;
+}
+@keyframes footerRuning {
+    0% {
+        transform: translateX(80%);
+    }
+    100% {
+        transform: translateX(-80%);
+    }
+}
+.coverContainer{
+    width: 100%;
+    aspect-ratio: 16/6;
+    display: grid;
+    grid-template-columns: 3fr 30px 1fr;
+    margin-bottom: 30px;
+}
+.coverPicture{
+    animation: switchCover infinite 20s;
+    background-image: url("../cover/architecture-3189363.jpg");
+    background-size: cover;
+    background-position: center;
+}
+@keyframes switchCover {
+    0% {
+        background-image: url("../cover/architecture-3189363.jpg");
+    }
+    25% {
+        background-image: url("../cover/beach-666122.jpg");
+    }
+    50% {
+        background-image: url("../cover/rome-1213549.jpg");
+    }
+    75% {
+        background-image: url("../cover/santorini-416136.jpg");
+    }
+    100% {
+        background-image: url("../cover/architecture-3189363.jpg");
+    }
+}
+#searchInput{
+    width: 100%;
+    border: 1px solid gray;
+    height: 40px;
+    font-size: 18px;
+    background-image: url("../image/search.png");
+    background-size: contain;
+    background-position-y: center;
+    background-position-x: 10px;
+    background-repeat: no-repeat;
+    padding: 0 10PX 0 60px;
+}
+.option{
+    display: grid;
+    padding: 30px 30px;
+    grid-template-rows: 60px 40px 1fr repeat(3, 70px);
+}
+.option p {
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+.contact{
+    border-radius: 50px;
+    margin-top: 5%;
+    margin-left: 50%;
+    width: 50%;
+    height: 70%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 50px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position-y: center;
+    background-position-x: 15px;
+}
+.calendar{
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+}

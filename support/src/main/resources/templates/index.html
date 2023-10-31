@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="/index/css/index.css">
+    <link rel="stylesheet" href="/index/css/common.css">
+
+</head>
+<body class="color2">
+<div th:fragment="header">
+    <div class="header color1 filler boxshadow-inset">
+        <div class="logo"></div>
+        <div></div>
+        <div class="buttonHeader color2 filler hover boxshadow-outset cursorPoint">Login</div>
+        <div class="buttonHeader color2 filler hover boxshadow-outset cursorPoint">SignUp</div>
+    </div>
+</div>
+<div class="coverContainer">
+    <div class="coverPicture filler boxshadow-outset color1"></div>
+    <div></div>
+    <div class="color1 filler boxshadow-inset option">
+        <input id="searchInput" type="text" class="filler boxshadow-outset">
+        <p>HÃY LIÊN HỆ VỚI CHÚNG TÔI</p>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3834.2065613860327!2d108.22985177592922!3d16.054767339823325!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x314219a486b7f699%3A0xae6269b629a63e82!2zQ29kZUd5bSDEkMOgIE7hurVuZw!5e0!3m2!1svi!2s!4v1698763774508!5m2!1svi!2s" allowfullscreen=""
+            loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+            class="calendar filler boxshadow-outset">
+        </iframe>
+        <div class="contact hover boxshadow-outset cursorPoint"
+        style="background-image: url('/index/image/phone.png')">Telephone</div>
+        <div class="contact hover boxshadow-outset cursorPoint"
+             style="background-image: url('/index/image/mail.png')">Email</div>
+        <div class="contact hover boxshadow-outset cursorPoint"
+             style="background-image: url('/index/image/face.png')">Fanpage</div>
+
+    </div>
+</div>
+
+
+<div id="slogan" class="border filler color1 boxshadow-inset">
+    <div>
+        <img class="sloganImg" src="/index/image/travel.png"/>
+        <img class="sloganImg" src="/index/image/travel.png"/>
+        <p>Casestudy thấp điểm là nhóm em nghỉ học đi du lịch hết...thề !!!</p>
+    </div>
+</div>
+
+</body>
+<script src="/index/javascript/typing.js"></script>
+<script src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap" async defer></script>
+</html>
